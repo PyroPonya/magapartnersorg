@@ -15,9 +15,9 @@
           </div>
         </div>
       </div>
-      <a href="https://backoffice.megapartners.org/partner/register">
+      <!-- <a href="https://backoffice.megapartners.org/partner/register">
         <div class="section_btn">become&nbsp;a&nbsp;partner</div>
-      </a>
+      </a> -->
     </div>
   </div>
 </template>
@@ -143,7 +143,7 @@ const listText = [
   line-height: 20px;
   color: #282841;
 }
-.section_btn {
+/* .section_btn {
   background-color: #4790fe;
   height: 50px;
   width: 220px;
@@ -160,5 +160,5 @@ const listText = [
 .section_btn:hover {
   background-color: #ffffff;
   border-color: #282841;
-}
+} */
 </style>

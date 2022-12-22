@@ -11,8 +11,13 @@
     :modules="modules"
     class="mySwiper"
   >
-    <swiper-slide v-for="(el, id) in slideArr" :key="id" class="slide"
-      ><img :src="el" alt="bad_error_why" />
+    <swiper-slide v-for="(el, id) in slideArr" :key="id" class="slide">
+      <div class="">
+        <img :src="el" alt="bad_error_why" />
+        <a href="https://backoffice.megapartners.org/partner/register">
+          <div class="section_btn">become&nbsp;a&nbsp;partner</div>
+        </a>
+      </div>
     </swiper-slide>
   </swiper>
 </template>
@@ -78,5 +83,27 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  position: relative;
+}
+.section_btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #4790fe;
+  height: 50px;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #282841;
+  text-transform: uppercase;
+  border: 1px solid #4790fe;
+}
+.section_btn:hover {
+  background-color: #ffffff;
+  border-color: #282841;
 }
 </style>
