@@ -46,8 +46,9 @@ export default {
 <style scoped>
 .swiper,
 .mySwiper {
+  min-width: 100%;
   max-width: 100%;
-  height: 100%;
+  min-height: 100%;
 }
 
 .swiper-slide {
@@ -72,16 +73,10 @@ export default {
 }
 
 .swiper-slide img {
+  /* change slide hight @here */
   display: block;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-/* .slide {
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-} */
 </style>

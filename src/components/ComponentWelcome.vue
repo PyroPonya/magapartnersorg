@@ -64,6 +64,7 @@ const listText = [
 }
 .slider {
   min-width: 300px;
+  min-width: 100%;
   max-width: 100%;
   height: 554px;
   display: flex;
@@ -140,7 +141,7 @@ const listText = [
   color: #282841;
 }
 .section_btn {
-  background-color: #ffffff;
+  background-color: #4790fe;
   height: 50px;
   width: 220px;
   display: flex;
@@ -151,10 +152,10 @@ const listText = [
   line-height: 20px;
   color: #282841;
   text-transform: uppercase;
-  border: 1px solid #282841;
+  border: 1px solid #4790fe;
 }
 .section_btn:hover {
-  background-color: #4790fe;
-  color: #ffffff;
+  background-color: #ffffff;
+  border-color: #282841;
 }
 </style>
