@@ -120,13 +120,16 @@ const listText = [
 }
 .list_element {
   padding-bottom: 36px;
-  margin-bottom: 36px;
+  /* margin-bottom: 36px; */
   border-bottom: 1px solid #282841;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 15px;
+}
+.list_element:not(:first-of-type) {
+  margin-top: 36px;
 }
 .element_title {
   font-weight: 600;
