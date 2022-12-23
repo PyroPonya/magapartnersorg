@@ -1,8 +1,6 @@
 <template>
   <swiper
-    :pagination="{
-      type: 'progressbar',
-    }"
+    :pagination="pagination"
     :autoplay="{
       delay: 6000,
       disableOnInteraction: false,
@@ -15,13 +13,16 @@
       <div class="">
         <img :src="el" alt="bad_error_why" />
         <a href="https://backoffice.megapartners.org/partner/register">
-          <div class="section_btn">become&nbsp;a&nbsp;partner</div>
+          <div class="slider_btn">become&nbsp;a&nbsp;partner</div>
         </a>
       </div>
     </swiper-slide>
   </swiper>
 </template>
 <script>
+// :pagination="{
+//       type: 'progressbar',
+//     }"
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue';
 
@@ -42,6 +43,20 @@ export default {
   setup() {
     const slideArr = [slide_1, slide_1, slide_1, slide_1, slide_1];
     return {
+      pagination: {
+        clickable: true,
+        renderBullet: function (index, className) {
+          return (
+            '<span class="' +
+            className +
+            '">' +
+            '<span class="' +
+            className +
+            '_circle"></span>' +
+            '</span>'
+          );
+        },
+      },
       modules: [Autoplay, Pagination],
       slideArr,
     };
@@ -54,6 +69,7 @@ export default {
   min-width: 100%;
   max-width: 100%;
   min-height: 100%;
+  border: 1px solid black;
 }
 
 .swiper-slide {
@@ -80,12 +96,14 @@ export default {
 .swiper-slide img {
   /* change slide hight @here */
   display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  width: 100% !important;
+  /* height: 100% !important; */
+  height: 556px !important;
+  /* object-fit: contain; */
+  object-fit: cover;
   position: relative;
 }
-.section_btn {
+.slider_btn {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
@@ -102,7 +120,7 @@ export default {
   text-transform: uppercase;
   border: 1px solid #4790fe;
 }
-.section_btn:hover {
+.slider_btn:hover {
   background-color: #ffffff;
   border-color: #282841;
 }

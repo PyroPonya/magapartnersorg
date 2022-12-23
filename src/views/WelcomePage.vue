@@ -12,12 +12,12 @@ import ComponentHeader from '../components/ComponentHeader.vue';
 import ComponentWelcome from '../components/ComponentWelcome.vue';
 import ComponentAboutus from '../components/ComponentAboutus.vue';
 import ComponentPartners from '../components/ComponentPartners.vue';
-setTimeout(() => {
-  alert(`
-  Merry Christmas and Happy New Year!
-  The site is currently under construction.
-  It will look much better soon!`);
-}, 5000);
+// setTimeout(() => {
+//   alert(`
+//   Merry Christmas and Happy New Year!
+//   The site is currently under construction.
+//   It will look much better soon!`);
+// }, 5000);
 </script>
 
 <style scoped>
