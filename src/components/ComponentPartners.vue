@@ -15,7 +15,7 @@
           <div class="element_head">
             {{ el.head }}
           </div>
-          <a href="">
+          <a :href="'https://www.' + el.link">
             <div class="element_link">
               {{ el.link }}
             </div>
@@ -23,7 +23,7 @@
           <div class="element_body">
             {{ el.body }}
           </div>
-          <a href="">
+          <a :href="'https://www.' + el.link">
             <div class="element_btn">more</div>
           </a>
         </div>

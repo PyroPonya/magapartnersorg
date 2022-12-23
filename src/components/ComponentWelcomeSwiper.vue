@@ -105,23 +105,25 @@ export default {
 }
 .slider_btn {
   position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 20%;
+  left: 40%;
   background-color: #4790fe;
-  height: 50px;
-  width: 220px;
+  height: 78px;
+  width: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 25px;
   line-height: 20px;
   color: #282841;
   text-transform: uppercase;
   border: 1px solid #4790fe;
+  color: #ffffff;
 }
 .slider_btn:hover {
   background-color: #ffffff;
-  border-color: #282841;
+  border-color: #4790fe;
+  color: #4790fe;
 }
 </style>

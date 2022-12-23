@@ -55,6 +55,7 @@ const listText = [
 
 <style scoped>
 .welcome_container {
+  min-width: 1500px;
   width: 100%;
   display: grid;
   grid-template-columns: 3fr 1fr;
